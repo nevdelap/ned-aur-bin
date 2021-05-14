@@ -1,0 +1,12 @@
+pkgbase = ned-bin
+	pkgdesc = Like grep but with a powerful replace, unlike sed, it's not only line oriented.
+	pkgver = 1.2.9
+	pkgrel = 1
+	url = https://github.com/nevdelap/ned
+	arch = x86_64
+	license = GPL3
+	source = ned-bin-1.2.9.tar.gz::https://github.com/nevdelap/ned/releases/download/release.1.2.9/ned.64-bit.musl.linux.tar.gz
+	md5sums = 4e4b1f1bd1d2a9b84589f17eb2e82d95
+
+pkgname = ned-bin
+
