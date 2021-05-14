@@ -1,17 +1,21 @@
 # Maintainer: Nev Delap <nevdelap at gmail dot com>
 pkgname="ned-bin"
-pkgver="1.2.9"
+pkgver="1.3.3"
 pkgrel=1
 pkgdesc="Like grep but with a powerful replace, unlike sed, it's not only line oriented."
 arch=("x86_64")
 url="https://github.com/nevdelap/ned"
 license=("GPL3")
 makedepends=()
-source=("$pkgname-$pkgver.tar.gz::https://github.com/nevdelap/ned/releases/download/release.$pkgver/ned.64-bit.musl.linux.tar.gz")
-md5sums=('4e4b1f1bd1d2a9b84589f17eb2e82d95')
+source=(
+	"https://github.com/nevdelap/ned/releases/download/release.$pkgver/ned.64-bit.musl.linux.gz"
+	"https://github.com/nevdelap/ned/releases/download/release.$pkgver/ned.1.gz"
+)
+md5sums=('6823b1880bb8b03fb41e962acd075d85'
+         'f15b49bea15473e0c503ae9bc3ce1994')
 
 build() {
-	tar xf ned-bin-1.2.9.tar.gz
+	mv ned.64-bit.musl.linux ned
 }
 
 check() {
